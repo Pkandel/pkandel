@@ -35,3 +35,65 @@ li a:hover {
   color: blue;
   border-bottom: 2px solid green;
   text-decoration: none !important; }
+
+#toggle {
+  width: 34px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: white;
+  margin-right: 10px;
+  float: right;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s; }
+
+#first {
+  /* border-bottom: 3px solid #2a2a2a; */
+  border-bottom: 2px solid black;
+  border-radius: 8px;
+  margin-top: 6px;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+#second {
+  border-bottom: 2px solid black;
+  border-radius: 8px;
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+#third {
+  border-bottom: 2px solid black;
+  border-radius: 8px;
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+#toggle:hover {
+  background-color: #2a2a2a; }
+
+#toggle:hover > #first {
+  border-bottom: 2px solid whitesmoke; }
+
+#toggle:hover > #second {
+  border-bottom: 2px solid whitesmoke; }
+
+#toggle:hover > #third {
+  border-bottom: 2px solid whitesmoke; }
+
+@media screen and (max-width: 1014px) {
+  #toggle {
+    display: block; }
+  .nav {
+    visibility: hidden; }
+  .logo {
+    margin-left: 20px; } }
+
+@media screen and (min-width: 1013px) {
+  #toggle {
+    display: none; } }
+
+@media screen and (max-width: 1018px) {
+  .nav {
+    display: none; } }

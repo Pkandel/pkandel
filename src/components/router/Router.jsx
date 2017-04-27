@@ -5,7 +5,6 @@ import { About, Contact, Project, Skill, Home } from '../';
 class Rout extends Component {
 
     render() {
-        console.log("from router");
         return (
             <Switch>
                 <Route exact path="/" component={Home} />
