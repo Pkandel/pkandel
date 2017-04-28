@@ -5,4 +5,6 @@ export { default as Contact } from './contact';
 export { default as Project } from './projects';
 export { default as Skill } from './skills';
 export { default as Router } from './router';
+export { default as Footer } from './footer';
+
 

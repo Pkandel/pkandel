@@ -1,0 +1,28 @@
+.footer {
+  position: absolute;
+  top: 60px;
+  left: 5px;
+  z-index: 10; }
+
+.footer li {
+  list-style: none; }
+
+.footer li a {
+  padding-bottom: 25px; }
+
+.footer li a:hover {
+  cursor: pointer; }
+
+.img-circle {
+  cursor: pointer;
+  margin-top: 15px; }
+
+@media screen and (max-width: 1018px) {
+  .footer {
+    position: relative;
+    float: right;
+    margin-top: -75px;
+    margin-right: 20px; }
+  .footer .img-circle {
+    cursor: pointer;
+    margin-right: 5px; } }

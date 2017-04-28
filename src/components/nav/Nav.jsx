@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import { Router } from '../';
 import './nav.css';
+import { Footer } from '../';
 
 
 class Nav extends Component {
@@ -31,9 +32,9 @@ class Nav extends Component {
         </div>
 
         {/* when we clicked above it comes down and check the appropirate router and render component*/}
-
+         <Footer />
         <Router />
-
+       
       </div>
     );
   }

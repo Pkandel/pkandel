@@ -9,15 +9,15 @@
 .nav {
   margin-right: 20px; }
 
-ul {
+.nav ul {
   list-style-type: none;
   overflow: hidden; }
 
-li {
+.nav li {
   float: right;
   margin-right: 40px; }
 
-li a {
+.nav li a {
   padding: 10px 16px 10px 16px;
   text-decoration: none;
   font-size: 14px;
@@ -25,12 +25,12 @@ li a {
   transition: 0.3s;
   opacity: 0.8; }
 
-li a:hover {
+.nav li a:hover {
   opacity: 1;
   border-bottom: 2px solid green;
   text-decoration: none !important; }
 
-.active {
+.nav .active {
   opacity: 1;
   color: blue;
   border-bottom: 2px solid green;
