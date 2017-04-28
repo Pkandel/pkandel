@@ -5,8 +5,8 @@ import {
 import { Router } from '../';
 import './nav.css';
 
-class Nav extends Component {
 
+class Nav extends Component {
 
   render() {
     return (
@@ -21,7 +21,7 @@ class Nav extends Component {
         </div>
         <div className="nav">
           <ul>
-            <li><NavLink activeClassName="active" exact to="/contact">Contact</NavLink></li>
+            <li><NavLink activeClassName="active" exact to="/contact" >Contact</NavLink></li>
             <li><NavLink activeClassName="active" exact to="/projects">Project</NavLink></li>
             <li><NavLink activeClassName="active" exact to="/skills">Skill</NavLink></li>
             <li><NavLink activeClassName="active" exact to="/about" >About</NavLink></li>
