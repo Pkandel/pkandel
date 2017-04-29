@@ -3,19 +3,28 @@
     margin-top: 100%;
     opacity: 0; }
   to {
-    margin-top: 20px;
+    margin-top: 0px;
     opacity: 1; } }
+
+body {
+  position: relative; }
 
 .container {
   position: relative;
-  margin-top: 20px;
-  min-height: 100%;
-  margin-bottom: 40px;
+  margin-top: 0px;
+  z-index: -1;
   animation: 1.5s fadein; }
 
 @media screen and (max-width: 1018px) {
+  @keyframes fadein {
+    from {
+      margin-top: 100%;
+      opacity: 0; }
+    to {
+      margin-top: 20px;
+      opacity: 1; } }
   .container {
-    margin-top: 50px; } }
+    margin-top: 20px; } }
 
 #contact {
   transition: 1s; }
