@@ -1,3 +1,9 @@
+@keyframes slideIn {
+  from {
+    margin-top: 0px; }
+  to {
+    margin-top: 10px; } }
+
 .navbar {
   display: inline;
   font-size: 16px;
@@ -12,19 +18,22 @@
   height: 100px; }
 
 .smallNav {
-  display: none;
   position: relative;
   margin-top: 10px;
-  min-width: 100%;
-  background-color: #2a2a2a; }
+  background-color: whitesmoke;
+  animation: slideIn 1s;
+  transition: opacity 0.5s ease-out; }
 
 .smallNav ul li {
   list-style: none;
-  text-align: center;
-  padding: 1%; }
+  text-align: left;
+  padding: 8px; }
 
 .smallNav ul li a {
-  text-transform: uppercase; }
+  text-decoration: none; }
+
+.smallNav ul li a :hover {
+  color: black; }
 
 .nav {
   margin-right: 20px; }
@@ -91,16 +100,16 @@
   margin-right: 4px; }
 
 #toggle:hover {
-  background-color: #2a2a2a; }
+  background-color: whitesmoke; }
 
 #toggle:hover > #first {
-  border-bottom: 2px solid whitesmoke; }
+  border-bottom: 2px solid #2a2a2a; }
 
 #toggle:hover > #second {
-  border-bottom: 2px solid whitesmoke; }
+  border-bottom: 2px solid #2a2a2a; }
 
 #toggle:hover > #third {
-  border-bottom: 2px solid whitesmoke; }
+  border-bottom: 2px solid #2a2a2a; }
 
 @media screen and (max-width: 1014px) {
   #toggle {
