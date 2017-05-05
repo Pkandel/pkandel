@@ -149,11 +149,11 @@
   border-bottom: 2px solid green;
   text-decoration: none !important; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .smallNav {
     display: none; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .smallNav {
     display: block; }
   .nav {

@@ -19,18 +19,19 @@ body {
     // -webkit-display:flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     @keyframes fadein {
         from {
             margin-top: 100%
         }
         to {
-            margin-top: 50px
+            top: 40px
         }
     }
     .container {
         position: relative;
-        margin-top: 50px;
+        top: 40px;
         animation: 1.5s fadein;
+        width:100%;
     }
 }

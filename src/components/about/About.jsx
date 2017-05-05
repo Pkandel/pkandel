@@ -6,7 +6,7 @@ class About extends Component {
   render() {
     return (
       <div className="container" id="about">
-        <div className="profile">
+        <div className="profile" >
           <div className="profilePicture">
             <img className="img-circle" src="./images/me.jpeg" alt="Profile" />
           </div>
@@ -21,7 +21,7 @@ class About extends Component {
             when I get a chance to learn new technologies
             </div>
         </div>
-        <div className="aboutMe">
+        <div className="aboutMe" >
 
           Hi, Thank you very much for visiting my site. You might already guess that I am a tech guy originally from nepal.
         I have completed my Bachelors degree in Science major in physics from back home in 2012.<br /><br />
