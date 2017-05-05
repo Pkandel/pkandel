@@ -1,1 +1,23 @@
-@import '../body.scss';
+    @import '../body.scss';
+.profile {
+    position:absolute;
+    background-color: white;
+    height: 400px;
+    left:20%;
+    top:60px;
+    width: 60%;
+    text-align: center;
+    .profilePicture {
+        width: 200px;
+        height: 130px; // margin-left:37%;
+        margin: auto;
+        width: 30%;
+        img {
+            margin-top: -60px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}

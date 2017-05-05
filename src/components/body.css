@@ -1,10 +1,8 @@
 @keyframes fadein {
   from {
-    margin-top: 100%;
-    opacity: 0; }
+    margin-top: 100%; }
   to {
-    margin-top: 0px;
-    opacity: 1; } }
+    margin-top: 35px; } }
 
 body {
   position: relative; }
@@ -15,13 +13,6 @@ body {
   z-index: -1;
   animation: 1.5s fadein; }
 
-@media screen and (max-width: 1018px) {
-  @keyframes fadein {
-    from {
-      margin-top: 100%;
-      opacity: 0; }
-    to {
-      margin-top: 20px;
-      opacity: 1; } }
+@media screen and (max-width: 768px) {
   .container {
-    margin-top: 20px; } }
+    margin-top: 35px; } }

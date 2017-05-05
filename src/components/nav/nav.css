@@ -1,8 +1,14 @@
 @keyframes slideIn {
   from {
-    margin-top: 0px; }
+    height: 0px; }
   to {
-    margin-top: 10px; } }
+    height: 190px; } }
+
+@keyframes show {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .navbar {
   display: inline;
@@ -10,32 +16,106 @@
   transition: 1s; }
 
 .logo {
-  margin-left: 200px; }
+  margin-left: 10%; }
 
 .logo img {
   float: left;
-  width: 100px;
-  height: 100px; }
+  width: 80px;
+  height: 80px;
+  border-radius: 50px; }
 
 .smallNav {
-  position: relative;
-  margin-top: 10px;
-  background-color: whitesmoke;
-  animation: slideIn 1s;
-  transition: opacity 0.5s ease-out; }
+  height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: #2a2a2a;
+  padding-top: 10px; }
 
-.smallNav ul li {
+.smallNav .smallNavHead li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+  margin-top: -10px; }
+
+.smallNav .smallNavHead #toggle {
+  width: 34px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: inherit;
+  margin-right: 10px;
+  float: right;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s; }
+
+.smallNav .smallNavHead #first {
+  /* border-bottom: 3px solid #2a2a2a; */
+  border-bottom: 2px solid black;
+  border-radius: 8px;
+  margin-top: 6px;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+.smallNav .smallNavHead #second {
+  border-bottom: 2px solid black;
+  border-radius: 8px;
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+.smallNav .smallNavHead #third {
+  border-bottom: 2px solid black;
+  border-radius: 8px;
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+.smallNav .smallNavHead #toggle:hover {
+  background-color: black; }
+
+.smallNav .smallNavHead #toggle:hover > #first {
+  border-bottom: 2px solid whitesmoke; }
+
+.smallNav .smallNavHead #toggle:hover > #second {
+  border-bottom: 2px solid whitesmoke; }
+
+.smallNav .smallNavHead #toggle:hover > #third {
+  border-bottom: 2px solid whitesmoke; }
+
+.smallNav .smallNavLink {
+  position: relative;
+  margin-top: 40px;
+  background-color: #2a2a2a;
+  border-top: 1px solid white;
+  animation: slideIn 1s;
+  display: none; }
+
+.smallNav .smallNavLink ul hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid black;
+  padding: 0;
+  margin: 0px;
+  animation: show 2s ease-in; }
+
+.smallNav .smallNavLink ul li {
   list-style: none;
   text-align: left;
-  padding: 8px; }
+  padding: 8px;
+  animation: show 2s ease-in; }
 
-.smallNav ul li a {
-  text-decoration: none; }
+.smallNav .smallNavLink ul li a {
+  text-decoration: none;
+  color: whitesmoke; }
 
-.smallNav ul li a :hover {
+.smallNav .smallNavLink ul li a :hover {
   color: black; }
 
 .nav {
+  z-index: -1;
   margin-right: 20px; }
 
 .nav ul {
@@ -65,67 +145,14 @@
   border-bottom: 2px solid green;
   text-decoration: none !important; }
 
-#toggle {
-  width: 34px;
-  height: 25px;
-  border-radius: 4px;
-  background-color: white;
-  margin-right: 10px;
-  float: right;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s; }
-
-#first {
-  /* border-bottom: 3px solid #2a2a2a; */
-  border-bottom: 2px solid black;
-  border-radius: 8px;
-  margin-top: 6px;
-  margin-left: 4px;
-  margin-right: 4px; }
-
-#second {
-  border-bottom: 2px solid black;
-  border-radius: 8px;
-  margin-top: 4px;
-  margin-left: 4px;
-  margin-right: 4px; }
-
-#third {
-  border-bottom: 2px solid black;
-  border-radius: 8px;
-  margin-top: 4px;
-  margin-left: 4px;
-  margin-right: 4px; }
-
-#toggle:hover {
-  background-color: whitesmoke; }
-
-#toggle:hover > #first {
-  border-bottom: 2px solid #2a2a2a; }
-
-#toggle:hover > #second {
-  border-bottom: 2px solid #2a2a2a; }
-
-#toggle:hover > #third {
-  border-bottom: 2px solid #2a2a2a; }
-
-@media screen and (max-width: 1014px) {
-  #toggle {
-    display: block; }
-  .nav {
-    visibility: hidden; }
-  .logo {
-    margin-left: 20px; }
-  .logo img {
-    width: 40px;
-    height: 30px; } }
-
-@media screen and (min-width: 1013px) {
-  #toggle {
+@media screen and (min-width: 768px) {
+  .smallNav {
     display: none; } }
 
-@media screen and (max-width: 1018px) {
+@media screen and (max-width: 768px) {
+  .smallNav {
+    display: block; }
   .nav {
+    display: none; }
+  .big {
     display: none; } }
