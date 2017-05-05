@@ -1,22 +1,36 @@
 @keyframes fadein {
-  from { margin-top:100%}
-  to   { margin-top:35px}
+    from {
+        margin-top: 100%
+    }
+    to {
+        margin-top: 20px
+    }
 }
+
 body {
-  position: relative;
+    position: relative;
+  
 }
+
 .container {
-    position:relative;
-    margin-top:0px;
-    z-index:-1;
-    animation: 1.5s fadein;  
-    // display:flex;
+    position: relative;
+    margin-top: 20px;
+    animation: 1.5s fadein; // display:flex;
     // -webkit-display:flex;
 }
+
 @media screen and (max-width: 768px) {
-.container {
-  margin-top:35px;
+    @keyframes fadein {
+        from {
+            margin-top: 100%
+        }
+        to {
+            margin-top: 50px
+        }
+    }
+    .container {
+        position: relative;
+        margin-top: 50px;
+        animation: 1.5s fadein;
+    }
 }
-}
-
-
