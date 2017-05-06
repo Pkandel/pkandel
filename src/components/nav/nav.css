@@ -34,6 +34,9 @@
   padding-top: 10px;
   z-index: 999; }
 
+.smallNav .smallNavHead {
+  text-align: center; }
+
 .smallNav .smallNavHead li {
   list-style: none;
   float: left;
@@ -88,10 +91,10 @@
 
 .smallNav .smallNavLink {
   position: relative;
-  margin-top: 40px;
+  margin-top: 20px;
   background-color: #2a2a2a;
   border-top: 1px solid white;
-  animation: slideIn 1s;
+  animation: slideIn 0.5s;
   display: none; }
 
 .smallNav .smallNavLink ul hr {
@@ -100,17 +103,17 @@
   border-top: 1px solid black;
   padding: 0;
   margin: 0px;
-  animation: show 2s ease-in; }
+  animation: show 2s ease-out; }
 
 .smallNav .smallNavLink ul li {
   list-style: none;
   text-align: left;
   padding: 8px;
-  animation: show 2s ease-in; }
+  animation: show 1.6s ease-out; }
 
 .smallNav .smallNavLink ul li a {
   text-decoration: none;
-  color: whitesmoke; }
+  text-shadow: none; }
 
 .smallNav .smallNavLink ul li a :hover {
   color: black; }
@@ -136,17 +139,18 @@
   font-size: 14px;
   display: block;
   transition: 0.3s;
-  opacity: 0.8; }
+  opacity: 0.8;
+  text-shadow: none; }
 
 .nav li a:hover {
   opacity: 1;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid lightblue;
   text-decoration: none !important; }
 
 .nav .active {
   opacity: 1;
-  color: blue;
-  border-bottom: 2px solid green;
+  color: lightblue;
+  border-bottom: 2px solid lightblue;
   text-decoration: none !important; }
 
 @media screen and (min-width: 1024px) {

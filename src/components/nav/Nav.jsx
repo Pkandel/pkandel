@@ -7,11 +7,11 @@ import './nav.css';
 
 
 class Nav extends Component {
+
   constructor() {
     super();
     this.state = ({
       DisplaysmallNavLink: false,
-      selectedNav: '',
     });
     this._renderNav = this._renderNav.bind(this);
     this._hideSmallNav = this._hideSmallNav.bind(this);
@@ -38,6 +38,9 @@ class Nav extends Component {
     });
   }
   render() {
+    const url = window.location.href;
+    const selectedNav = url.replace('http://localhost:3000/', '').toUpperCase();
+
     return (
       <div className="navbar">
         <div className="big logo">
@@ -60,11 +63,13 @@ class Nav extends Component {
         <div className="smallNav" id="smallNav">
           <div className="smallNavHead" id="smallNavHead">
             <li>
-              <a href="https://www.facebook.com/prakash.kandel.10" target="_blank"> <img src="./images/fb.jpeg" className="img-circle" style={{ width: '20px', heignt: '20px' }} alt="" /></a>
-              <a href="mailto:unique.prakash2002@gmail.com?Subject=Hello%20Prakash"> <img src="./images/gmail.png" className="img-circle" style={{ width: '20px', heignt: '20px' }} alt="" /></a>
-              <a href="https://www.linkedin.com/in/prakash-kandel-112b47a3/" target="_blank"> <img src="./images/linkedin.jpeg" className="img-circle" style={{ width: '20px' }} alt="" /></a>
+              <a href="https://www.facebook.com/prakash.kandel.10" target="_blank"> <img src="./images/fb.jpeg" className="img-circle" style={{ marginRight: '10px', width: '20px', heignt: '20px' }} alt="" /></a>
+              <a href="mailto:unique.prakash2002@gmail.com?Subject=Hello%20Prakash"> <img src="./images/gmail.png" className="img-circle" style={{ marginRight: '10px', width: '20px', heignt: '20px' }} alt="" /></a>
+              <a href="https://www.linkedin.com/in/prakash-kandel-112b47a3/" target="_blank"> <img src="./images/linkedin.jpeg" className="img-circle" style={{ marginRight: '10px', width: '20px' }} alt="" /></a>
             </li>
-            {this.state.selectedNav}
+
+            {selectedNav}
+
             <div id="toggle" onClick={this._renderNav}>
               <div id="first" />
               <div id="second" />
