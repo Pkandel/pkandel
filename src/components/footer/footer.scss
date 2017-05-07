@@ -1,9 +1,9 @@
+@import '../body.scss';
 .footer {
-    position: relative;
-    border: 5px solid black;
+    position: absolute;
     top: 60px;
     left: 5px;
-    z-index: 100000;
+    z-index: 10;
     li {
         list-style: none; //margin-top:-50vh;
         a {
@@ -22,18 +22,6 @@
 // ipad air screen
 @media screen and (max-width: 1024px) {
     .footer {
-        position: relative;
-        float: right;
-        margin-top: -93px;
-        margin-right: 20px;
-        .img-circle {
-            cursor: pointer;
-            margin-right: 5px;
-        }
+       display: none;
     }
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    display: none;
-  }
 }

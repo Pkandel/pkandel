@@ -40,22 +40,19 @@ body {
   padding-right: 15px;
   border-radius: 10px;
   border: 5px solid whitesmoke; }
-
-.profile .profileCaption {
-  text-align: left;
-  padding: 10px 10px 10px 10px; }
-
-.profile .profilePicture {
-  width: 200px;
-  height: 130px;
-  margin: auto;
-  width: 30%; }
-
-.profile .profilePicture img {
-  margin-top: -60px;
-  width: 160px;
-  height: 160px;
-  border: 5px solid white; }
+  .profile .profileCaption {
+    text-align: left;
+    padding: 10px 10px 10px 10px; }
+  .profile .profilePicture {
+    width: 200px;
+    height: 130px;
+    margin: auto;
+    width: 30%; }
+    .profile .profilePicture img {
+      margin-top: -60px;
+      width: 160px;
+      height: 160px;
+      border: 5px solid white; }
 
 .edu-exp {
   position: relative;
@@ -65,30 +62,28 @@ body {
   top: 20px;
   display: flex;
   -webkit-display: flex; }
-
-.edu-exp .experience {
-  position: relative;
-  top: 0px;
-  bottom: 20px;
-  height: auto;
-  left: 0;
-  width: 49%;
-  padding: 10px 10px 10px 16px;
-  border-radius: 10px;
-  background-color: white;
-  border: 5px solid whitesmoke; }
-
-.edu-exp .education {
-  position: relative;
-  top: 0px;
-  bottom: 20px;
-  margin-left: 2%;
-  width: 49%;
-  height: auto;
-  padding: 10px 10px 10px 16px;
-  border-radius: 10px;
-  background-color: white;
-  border: 5px solid whitesmoke; }
+  .edu-exp .experience {
+    position: relative;
+    top: 0px;
+    bottom: 20px;
+    height: auto;
+    left: 0;
+    width: 49%;
+    padding: 10px 10px 10px 16px;
+    border-radius: 10px;
+    background-color: white;
+    border: 5px solid whitesmoke; }
+  .edu-exp .education {
+    position: relative;
+    top: 0px;
+    bottom: 20px;
+    margin-left: 2%;
+    width: 49%;
+    height: auto;
+    padding: 10px 10px 10px 16px;
+    border-radius: 10px;
+    background-color: white;
+    border: 5px solid whitesmoke; }
 
 .aboutMe {
   border-radius: 10px;
@@ -103,12 +98,12 @@ body {
     margin-top: 40px;
     left: 5%;
     width: 90%; }
-  .profile .profilePicture {
-    width: 120px;
-    height: 60px; }
-  .profile .profilePicture img {
-    margin-top: -50px;
-    width: 100px;
-    height: 100px; }
+    .profile .profilePicture {
+      width: 120px;
+      height: 60px; }
+      .profile .profilePicture img {
+        margin-top: -50px;
+        width: 100px;
+        height: 100px; }
   .aboutMe {
     margin-bottom: 20px; } }

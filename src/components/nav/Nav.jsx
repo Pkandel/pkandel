@@ -93,7 +93,8 @@ class Nav extends Component {
             </ul>
           </div>
         </div>
-        <Router />
+        <Footer />
+        <Router />      
       </div>
     );
   }
