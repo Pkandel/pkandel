@@ -1,8 +1,9 @@
 .footer {
-    position: absolute;
+    position: relative;
+    border: 5px solid black;
     top: 60px;
     left: 5px;
-    z-index: 10;
+    z-index: 100000;
     li {
         list-style: none; //margin-top:-50vh;
         a {
@@ -19,7 +20,7 @@
     margin-top: 15px;
 }
 // ipad air screen
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .footer {
         position: relative;
         float: right;

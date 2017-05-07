@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   NavLink,
 } from 'react-router-dom';
-import { Router } from '../';
+import { Router, Footer } from '../';
 import './nav.css';
 
 
@@ -94,7 +94,6 @@ class Nav extends Component {
           </div>
         </div>
         <Router />
-
       </div>
     );
   }
