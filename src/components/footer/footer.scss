@@ -1,7 +1,6 @@
 @import '../body.scss';
 .footer {
     position: absolute;
-    top: 60px;
     left: 5px;
     z-index: 10;
     li {
@@ -15,9 +14,12 @@
     }
 }
 
-.img-circle {
+.img {
     cursor: pointer;
-    margin-top: 15px;
+    border:1px solid white;
+    width:30px;
+    border-radius: 50%;
+    margin-top:15px;
 }
 // ipad air screen
 @media screen and (max-width: 1024px) {

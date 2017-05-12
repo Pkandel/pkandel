@@ -73,10 +73,23 @@
     }
 
     @media screen and (max-width: 1024px) {
+        .edu-exp {
+            display: block;
+            -webkit-display: block; //border: 1px solid red;
+            .experience {
+                margin: auto;
+                width: 98%;
+                margin-bottom: 10px;
+            }
+            .education {
+                width: 98%;
+                margin: auto;
+            }
+        }
         .profile {
+            margin: auto;
             margin-top: 40px;
-            left: 5%;
-            width: 90%;
+            width: 98%;
             .profilePicture {
                 width: 120px;
                 height: 60px; // margin-left:37%;
@@ -87,7 +100,6 @@
                 }
             }
         }
-        .aboutMe {
-            margin-bottom: 20px;
-        }
     }
+
+    @media screen and (max-width: 1024px) {}

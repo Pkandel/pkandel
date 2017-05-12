@@ -15,7 +15,9 @@ class Nav extends Component {
     });
     this._renderNav = this._renderNav.bind(this);
     this._hideSmallNav = this._hideSmallNav.bind(this);
+
   }
+
   _renderNav() {
     const { DisplaysmallNavLink } = this.state;
     if (DisplaysmallNavLink === false) {
@@ -39,7 +41,14 @@ class Nav extends Component {
   }
   render() {
     const url = window.location.href;
-    const selectedNav = url.replace('http://localhost:3000/', '').toUpperCase();
+    var selectedNav = url.replace('http://localhost:3000/', '').toUpperCase();
+   if(selectedNav == "") {
+     selectedNav = "HOME";
+     document.getElementById('me').style.display = "block";
+   }
+   else {
+     document.getElementById('me').style.display = "none";
+   }
 
     return (
       <div className="navbar">

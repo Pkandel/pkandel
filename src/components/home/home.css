@@ -1,29 +1,77 @@
-@keyframes fadein {
+@keyframes slideUp {
   from {
     margin-top: 100%; }
   to {
-    margin-top: 20px; } }
+    margin-top: 130px; } }
 
 body {
   position: relative; }
 
-.container {
+.home {
+  color: black;
   position: relative;
-  margin-top: 20px;
-  animation: 1.5s fadein;
+  animation: 1.5s slideUp;
   height: 100%;
-  display: flex;
-  -webkit-display: flex; }
+  margin: auto;
+  margin-top: 130px;
+  margin-right: 35%;
+  width: 50%; }
+  .home h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px; }
+    .home h3 .name {
+      color: cyan; }
+  .home h4 {
+    padding-left: 20%;
+    color: white; }
+    .home h4 .web-developer {
+      color: cyan; }
+  .home p {
+    text-align: center;
+    color: white; }
+    .home p .company {
+      color: cyan; }
+  .home .get-in-touch {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+    background-color: #0088cc;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer; }
+    .home .get-in-touch #text {
+      opacity: 1;
+      transition: opacity 1s; }
+    .home .get-in-touch #social {
+      height: 0;
+      opacity: 0; }
+      .home .get-in-touch #social li {
+        list-style: none; }
+        .home .get-in-touch #social li img {
+          margin-left: 5px;
+          margin-top: -10px; }
+    .home .get-in-touch:hover #social {
+      height: inherit;
+      opacity: 1;
+      transition: opacity 1s; }
+    .home .get-in-touch:hover #text {
+      height: 0;
+      opacity: 0;
+      transition: none; }
 
 @media screen and (max-width: 1024px) {
-  @keyframes fadein {
+  @keyframes slideUp {
     from {
       margin-top: 100%; }
     to {
-      top: 40px; } }
-  .container {
+      top: 180px; } }
+  .home {
     position: relative;
-    top: 40px;
+    top: 5px;
     animation: 1.5s fadein;
-    width: 100%;
+    margin: auto;
+    margin-top: 180px;
+    margin-right: 38%;
+    width: 50%;
     height: 100%; } }
