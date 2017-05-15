@@ -13,8 +13,8 @@ body {
   margin-top: 20px;
   animation: 1.5s fadein;
   height: 100%;
-  margin-left: 5%;
-  width: 90%; }
+  margin-left: 3%;
+  width: 95%; }
 
 @media screen and (max-width: 1024px) {
   @keyframes fadein {
@@ -29,3 +29,13 @@ body {
     width: 100%;
     height: 100%;
     margin-left: 0; } }
+
+.Loan {
+  position: absolute;
+  margin: auto;
+  height: 100%;
+  width: 95%;
+  padding: 15px;
+  background-color: white;
+  opacity: 0.8;
+  display: none; }

@@ -13,8 +13,8 @@ body {
   margin-top: 20px;
   animation: 1.5s fadein;
   height: 100%;
-  margin-left: 5%;
-  width: 90%; }
+  margin-left: 3%;
+  width: 95%; }
 
 @media screen and (max-width: 1024px) {
   @keyframes fadein {
@@ -40,7 +40,6 @@ body {
 .row .each-skill-1 {
   width: 32%;
   margin-left: 1%;
-  background-color: white;
   padding: 10px;
   border-radius: 10px; }
 
@@ -53,7 +52,6 @@ body {
 .row .each-skill-2 {
   width: 32%;
   margin-left: 1%;
-  background-color: white;
   padding: 10px;
   border-radius: 10px; }
 
@@ -66,7 +64,6 @@ body {
 .row .each-skill-3 {
   width: 32%;
   margin-left: 1%;
-  background-color: white;
   padding: 10px;
   border-radius: 10px; }
 

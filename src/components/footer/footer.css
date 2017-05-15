@@ -13,8 +13,8 @@ body {
   margin-top: 20px;
   animation: 1.5s fadein;
   height: 100%;
-  margin-left: 5%;
-  width: 90%; }
+  margin-left: 3%;
+  width: 95%; }
 
 @media screen and (max-width: 1024px) {
   @keyframes fadein {
@@ -34,12 +34,15 @@ body {
   position: absolute;
   left: 5px;
   z-index: 10; }
-  .footer li {
-    list-style: none; }
-    .footer li a {
-      padding-bottom: 25px; }
-    .footer li a:hover {
-      cursor: pointer; }
+
+.footer li {
+  list-style: none; }
+
+.footer li a {
+  padding-bottom: 25px; }
+
+.footer li a:hover {
+  cursor: pointer; }
 
 .img {
   cursor: pointer;

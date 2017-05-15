@@ -10,9 +10,11 @@ body { position: relative; }
     position: relative;
     margin-top: 20px;
     animation: 1.5s fadein;
-    height: 100%;   
-    margin-left:5%;
-    width:90%;
+    height: 100%; 
+    //margin:auto;  
+    margin-left:3%;
+    //margin-right: 2%;
+    width:95%;
 }
 
 @media screen and (max-width: 1024px) {
