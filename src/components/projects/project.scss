@@ -1,20 +1,36 @@
 @import '../body.scss';
 .Loan {
-    position: absolute;
-    margin:auto;
-    height:100%;
-    width:95%;
+    position: fixed;
+    top: 18vh;
+    bottom: 3vh;
+    left: 3%;
+    margin: auto;
+    height: 80vh;
+    width: 94%;
     padding: 15px;
-    background-color:white;
-    opacity: 0.8;
+    background-color: white;
+    opacity: 0.9;
     display: none;
-    .project-detail {
-
+    z-index: 10000;
+    color: black;
+    border-radius: 10px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    .clear {
+        width: 100%;
+        height: 20px;
+        i {
+            float: right;
+            cursor: pointer;
+            transition: transform 0.5s;
+            &:hover {
+                transform: scale(1.2);
+                transition: transform 0.5s;
+                color: red;
+            }
+        }
     }
-    .technology {
-
-    }
-    .role {
-
-    }
+    .project-detail {}
+    .technology {}
+    .role {}
 }

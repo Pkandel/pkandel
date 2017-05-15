@@ -14,7 +14,8 @@ body {
   animation: 1.5s fadein;
   height: 100%;
   margin-left: 3%;
-  width: 95%; }
+  width: 95%;
+  -webkit-overflow-scrolling: touch; }
 
 @media screen and (max-width: 1024px) {
   @keyframes fadein {
@@ -28,14 +29,37 @@ body {
     animation: 1.5s fadein;
     width: 100%;
     height: 100%;
-    margin-left: 0; } }
+    margin-left: 0;
+    -webkit-overflow-scrolling: touch; } }
 
 .Loan {
-  position: absolute;
+  position: fixed;
+  top: 18vh;
+  bottom: 3vh;
+  left: 3%;
   margin: auto;
-  height: 100%;
-  width: 95%;
+  height: 80vh;
+  width: 94%;
   padding: 15px;
   background-color: white;
-  opacity: 0.8;
-  display: none; }
+  opacity: 0.9;
+  display: none;
+  z-index: 10000;
+  color: black;
+  border-radius: 10px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.Loan .clear {
+  width: 100%;
+  height: 20px; }
+
+.Loan .clear i {
+  float: right;
+  cursor: pointer;
+  transition: transform 0.5s; }
+
+.Loan .clear i:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+  color: red; }
