@@ -3,7 +3,7 @@
         margin-top: 100%
     }
     to {
-        margin-top: 130px
+        margin-top: 18vh
     }
 }
 
@@ -17,9 +17,10 @@ body {
     animation: 1.5s slideUp;
     height: 100%;
     margin: auto;
-    margin-top: 130px;
+    margin-top: 18vh;
     margin-right: 35%;
-    width: 50%; // border: 1px solid red;
+    width: 50%;
+    //border: 1px solid red;
     h3 {
         text-align: center;
         color: white;
@@ -29,7 +30,9 @@ body {
         }
     }
     h4 {
-        padding-left: 20%;
+        //padding-left: 20%;
+        text-align: center;
+       // border: 1px solid red;
         color: white;
         .web-developer {
             color: cyan;
@@ -95,7 +98,7 @@ body {
         top: 5px;
         animation: 1.5s fadein;
         margin: auto;
-        margin-top: 180px; 
+        margin-top: 180px;
         margin-right: 33%;
         width: 50%;
         height: 100%;
@@ -103,8 +106,7 @@ body {
             font-size: 22px;
         }
         h4 {
-            font-size: 15px;
-           // padding-left: 0;
+            font-size: 15px; // padding-left: 0;
         }
         p {
             font-size: 12px;

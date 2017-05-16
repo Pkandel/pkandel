@@ -161,15 +161,17 @@
         transition: 0.3s;
         opacity: 0.8;
         text-shadow: none;
+        color: white;
     }
     li a:hover {
         opacity: 1;
         border-bottom: 2px solid lightblue;
         text-decoration: none !important;
+        color: black;
     }
     .active {
         opacity: 1;
-        color: lightblue;
+        color: black;
         border-bottom: 2px solid lightblue;
         text-decoration: none !important;
     }

@@ -32,7 +32,13 @@ body {
     margin-left: 0;
     -webkit-overflow-scrolling: touch; } }
 
-.Loan {
+@keyframes showModal {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.project-detail {
   position: fixed;
   top: 18vh;
   bottom: 3vh;
@@ -42,24 +48,37 @@ body {
   width: 94%;
   padding: 15px;
   background-color: white;
-  opacity: 0.9;
   display: none;
-  z-index: 10000;
+  animation: showModal 1s ease-out;
+  opacity: 0;
+  z-index: 10;
   color: black;
   border-radius: 10px;
-  overflow-y: auto;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
 
-.Loan .clear {
-  width: 100%;
+.project-detail .clear {
+  position: fixed;
+  margin: auto;
+  left: 2%;
+  width: 94%;
   height: 20px; }
 
-.Loan .clear i {
+.project-detail .clear i {
   float: right;
   cursor: pointer;
   transition: transform 0.5s; }
 
-.Loan .clear i:hover {
-  transform: scale(1.2);
+.project-detail .clear i:hover {
+  transform: scale(1.5);
   transition: transform 0.5s;
   color: red; }
+
+.project-detail .images img {
+  margin: auto;
+  margin-left: 0;
+  width: 86%; }
+
+@media screen and (max-width: 1024px) {
+  .project-detail .images img {
+    width: 100%; } }

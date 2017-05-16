@@ -2,7 +2,7 @@
   from {
     margin-top: 100%; }
   to {
-    margin-top: 130px; } }
+    margin-top: 18vh; } }
 
 body {
   position: relative; }
@@ -13,7 +13,7 @@ body {
   animation: 1.5s slideUp;
   height: 100%;
   margin: auto;
-  margin-top: 130px;
+  margin-top: 18vh;
   margin-right: 35%;
   width: 50%; }
   .home h3 {
@@ -23,7 +23,7 @@ body {
     .home h3 .name {
       color: cyan; }
   .home h4 {
-    padding-left: 20%;
+    text-align: center;
     color: white; }
     .home h4 .web-developer {
       color: cyan; }
