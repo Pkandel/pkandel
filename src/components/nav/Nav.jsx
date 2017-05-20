@@ -41,7 +41,7 @@ class Nav extends Component {
   }
   render() {
     const url = window.location.href;
-    var selectedNav = url.replace('http://localhost:3000/', '').toUpperCase();
+    var selectedNav = url.replace('https://pkandel.com/', '').toUpperCase();
    if(selectedNav == "") {
      selectedNav = "HOME";
      document.getElementById('me').style.display = "block";

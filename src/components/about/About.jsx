@@ -71,15 +71,16 @@ class About extends Component {
                 <h4> Federation University <span style={{marginLeft:"3em"}}> 6.33 GPA </span></h4>
                 <h5>  2013 - 2016</h5>
                 <p>Bachelor Of IT major in Software Engineering </p>
-                <p><a className="btn btn-default" href="#" role="button">Learn More &raquo,</a></p>
+                {/*<p><a className="btn btn-default" href="#" role="button">Learn More &raquo,</a></p>*/}
               </div>
+              <hr />
               <div className="education-each">
                 <img alt="projects" src="./images/birendra.jpg" className="img-circle" style={{ width: '71px', height: '71px' }} />
                 <h3>Bachelor Of Science</h3>
                 <h4> Tribhuvan University <span style={{ marginLeft: "3em" }}> 70% </span></h4>
                 <h5>  2007 - 2011</h5>
                 <p>Bachelor Of Science major in Physics </p>
-                <p><a className="btn btn-default" href="#" role="button">Learn More &raquo,</a></p>
+                {/*<p><a className="btn btn-default" href="#" role="button">Learn More &raquo,</a></p>*/}
               </div>
 
             </div>

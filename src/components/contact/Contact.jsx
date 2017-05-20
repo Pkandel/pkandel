@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import nodemailer from 'nodemailer';
 import './contact.css';
 
 class Contact extends Component {
@@ -44,7 +43,6 @@ class Contact extends Component {
     return (
       <div className="container" id="contact">
           <h4> Please leave me a Message </h4>
-          name: {name}, email: {email}, message: {message}
 
           <div className="contact-form">
             <form onSubmit={this._handleSubmit}>
