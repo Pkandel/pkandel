@@ -16,49 +16,62 @@ body {
   margin-top: 18vh;
   margin-right: 35%;
   width: 50%; }
-  .home h3 {
-    text-align: center;
-    color: white;
-    margin-bottom: 15px; }
-    .home h3 .name {
-      color: cyan; }
-  .home h4 {
-    text-align: center;
-    color: white; }
-    .home h4 .web-developer {
-      color: cyan; }
-  .home p {
-    text-align: center;
-    color: white; }
-    .home p .company {
-      color: cyan; }
-  .home .get-in-touch {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 18px;
-    background-color: #0088cc;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer; }
-    .home .get-in-touch #text {
-      opacity: 1;
-      transition: opacity 1s; }
-    .home .get-in-touch #social {
-      height: 0;
-      opacity: 0; }
-      .home .get-in-touch #social li {
-        list-style: none; }
-        .home .get-in-touch #social li img {
-          margin-left: 5px;
-          margin-top: -10px; }
-    .home .get-in-touch:hover #social {
-      height: inherit;
-      opacity: 1;
-      transition: opacity 1s; }
-    .home .get-in-touch:hover #text {
-      height: 0;
-      opacity: 0;
-      transition: none; }
+
+.home h3 {
+  text-align: center;
+  color: white;
+  margin-bottom: 15px; }
+
+.home h3 .name {
+  color: cyan; }
+
+.home h4 {
+  text-align: center;
+  color: white; }
+
+.home h4 .web-developer {
+  color: cyan; }
+
+.home p {
+  text-align: center;
+  color: white; }
+
+.home p .company {
+  color: cyan; }
+
+.home .get-in-touch {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 18px;
+  background-color: #0088cc;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer; }
+
+.home .get-in-touch #text {
+  opacity: 1;
+  transition: opacity 1s; }
+
+.home .get-in-touch #social {
+  height: 0;
+  opacity: 0; }
+
+.home .get-in-touch #social li {
+  list-style: none; }
+
+.home .get-in-touch #social li img {
+  margin-left: 5px;
+  margin-top: -10px; }
+
+.home .get-in-touch:hover #social {
+  height: inherit;
+  opacity: 1;
+  transition: opacity 1s; }
+
+.home .get-in-touch:hover #text {
+  height: 0;
+  opacity: 0;
+  transition: none; }
 
 @media screen and (max-width: 1024px) {
   @keyframes slideUp {
@@ -75,12 +88,12 @@ body {
     margin-right: 33%;
     width: 50%;
     height: 100%; }
-    .home h3 {
-      font-size: 22px; }
-    .home h4 {
-      font-size: 15px; }
-    .home p {
-      font-size: 12px; } }
+  .home h3 {
+    font-size: 22px; }
+  .home h4 {
+    font-size: 15px; }
+  .home p {
+    font-size: 12px; } }
 
 @media screen and (max-width: 414px) {
   .home {
@@ -91,10 +104,10 @@ body {
     margin-top: 180px;
     width: 80%;
     height: 100%; }
-    .home h3 {
-      font-size: 22px; }
-    .home h4 {
-      font-size: 15px;
-      padding-left: 0; }
-    .home p {
-      font-size: 12px; } }
+  .home h3 {
+    font-size: 22px; }
+  .home h4 {
+    font-size: 15px;
+    padding-left: 0; }
+  .home p {
+    font-size: 12px; } }
