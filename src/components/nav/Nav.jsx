@@ -15,7 +15,6 @@ class Nav extends Component {
     });
     this._renderNav = this._renderNav.bind(this);
     this._hideSmallNav = this._hideSmallNav.bind(this);
-
   }
 
   _renderNav() {
@@ -41,13 +40,12 @@ class Nav extends Component {
   }
   render() {
     const url = window.location.href;
-    var selectedNav = url.replace('https://pkandel.com/', '').toUpperCase();
-   if(selectedNav == "") {
-     selectedNav = "HOME";
-     document.getElementById('me').style.display = "block";
-   }
-   else {
-     document.getElementById('me').style.display = "none";
+    let selectedNav = url.replace('https://pkandel.com/', '').toUpperCase();
+    if (selectedNav === '') {
+     selectedNav = 'HOME';
+     document.getElementById('me').style.display = 'block';
+   }   else {
+     document.getElementById('me').style.display = 'none';
    }
 
     return (
@@ -103,7 +101,7 @@ class Nav extends Component {
           </div>
         </div>
         <Footer />
-        <Router />      
+        <Router />
       </div>
     );
   }

@@ -40,7 +40,7 @@ class Project extends Component {
         });
       }
     });
-    if (showmodal == false) {
+    if (showmodal === false) {
       document.getElementById('project-detail').style.display = 'block';
       document.getElementById('project-detail').style.opacity = '0.9';
       document.getElementById('project').style.pointerEvents = "none";

@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.16.1",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
     "nodemailer": "^4.0.1",
+    "pm2": "^2.4.6",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.0.0"
@@ -18,6 +23,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",
     "react-scripts": "0.9.5"
   },
@@ -28,6 +34,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "node node_modules/react-scripts/scripts/build.js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prod": "nodemon server.js"
   }
 }
