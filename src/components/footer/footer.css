@@ -36,15 +36,12 @@ body {
   position: absolute;
   left: 5px;
   z-index: 10; }
-
-.footer li {
-  list-style: none; }
-
-.footer li a {
-  padding-bottom: 25px; }
-
-.footer li a:hover {
-  cursor: pointer; }
+  .footer li {
+    list-style: none; }
+    .footer li a {
+      padding-bottom: 25px; }
+    .footer li a:hover {
+      cursor: pointer; }
 
 .img {
   cursor: pointer;

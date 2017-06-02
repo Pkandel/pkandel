@@ -25,12 +25,11 @@
 
 .logo {
   margin-left: 10%; }
-
-.logo img {
-  float: left;
-  width: 80px;
-  height: 80px;
-  border-radius: 50px; }
+  .logo img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px; }
 
 .smallNav {
   height: 50px;
@@ -41,126 +40,105 @@
   background-color: #2a2a2a;
   padding-top: 10px;
   z-index: 999; }
-
-.smallNav .smallNavHead {
-  text-align: center; }
-
-.smallNav .smallNavHead li {
-  list-style: none;
-  float: left;
-  margin-left: 10px; }
-
-.smallNav .smallNavHead #toggle {
-  width: 34px;
-  height: 25px;
-  border-radius: 4px;
-  background-color: inherit;
-  margin-right: 10px;
-  float: right;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s; }
-
-.smallNav .smallNavHead #first {
-  /* border-bottom: 3px solid #2a2a2a; */
-  border-bottom: 2px solid black;
-  border-radius: 8px;
-  margin-top: 6px;
-  margin-left: 4px;
-  margin-right: 4px; }
-
-.smallNav .smallNavHead #second {
-  border-bottom: 2px solid black;
-  border-radius: 8px;
-  margin-top: 4px;
-  margin-left: 4px;
-  margin-right: 4px; }
-
-.smallNav .smallNavHead #third {
-  border-bottom: 2px solid black;
-  border-radius: 8px;
-  margin-top: 4px;
-  margin-left: 4px;
-  margin-right: 4px; }
-
-.smallNav .smallNavHead #toggle:hover {
-  background-color: black; }
-
-.smallNav .smallNavHead #toggle:hover > #first {
-  border-bottom: 2px solid whitesmoke; }
-
-.smallNav .smallNavHead #toggle:hover > #second {
-  border-bottom: 2px solid whitesmoke; }
-
-.smallNav .smallNavHead #toggle:hover > #third {
-  border-bottom: 2px solid whitesmoke; }
-
-.smallNav .smallNavLink {
-  position: relative;
-  margin-top: 20px;
-  background-color: #2a2a2a;
-  border-top: 1px solid white;
-  animation: slideIn 0.5s;
-  display: none; }
-
-.smallNav .smallNavLink ul hr {
-  display: block;
-  border: 0;
-  border-top: 1px solid black;
-  padding: 0;
-  margin: 0px;
-  animation: show 2s ease-out; }
-
-.smallNav .smallNavLink ul li {
-  list-style: none;
-  text-align: left;
-  padding: 8px;
-  animation: show 1.6s ease-out; }
-
-.smallNav .smallNavLink ul li a {
-  text-decoration: none;
-  text-shadow: none; }
-
-.smallNav .smallNavLink ul li a :hover {
-  color: black; }
-
-.smallNav .smallNavLink ul li a:active {
-  color: black; }
+  .smallNav .smallNavHead {
+    text-align: center; }
+    .smallNav .smallNavHead li {
+      list-style: none;
+      float: left;
+      margin-left: 10px; }
+    .smallNav .smallNavHead #toggle {
+      width: 34px;
+      height: 25px;
+      border-radius: 4px;
+      background-color: inherit;
+      margin-right: 10px;
+      float: right;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s; }
+    .smallNav .smallNavHead #first {
+      /* border-bottom: 3px solid #2a2a2a; */
+      border-bottom: 2px solid black;
+      border-radius: 8px;
+      margin-top: 6px;
+      margin-left: 4px;
+      margin-right: 4px; }
+    .smallNav .smallNavHead #second {
+      border-bottom: 2px solid black;
+      border-radius: 8px;
+      margin-top: 4px;
+      margin-left: 4px;
+      margin-right: 4px; }
+    .smallNav .smallNavHead #third {
+      border-bottom: 2px solid black;
+      border-radius: 8px;
+      margin-top: 4px;
+      margin-left: 4px;
+      margin-right: 4px; }
+    .smallNav .smallNavHead #toggle:hover {
+      background-color: black; }
+    .smallNav .smallNavHead #toggle:hover > #first {
+      border-bottom: 2px solid whitesmoke; }
+    .smallNav .smallNavHead #toggle:hover > #second {
+      border-bottom: 2px solid whitesmoke; }
+    .smallNav .smallNavHead #toggle:hover > #third {
+      border-bottom: 2px solid whitesmoke; }
+  .smallNav .smallNavLink {
+    position: relative;
+    margin-top: 20px;
+    background-color: #2a2a2a;
+    border-top: 1px solid white;
+    animation: slideIn 0.5s;
+    display: none; }
+    .smallNav .smallNavLink ul hr {
+      display: block;
+      border: 0;
+      border-top: 1px solid black;
+      padding: 0;
+      margin: 0px;
+      animation: show 2s ease-out; }
+    .smallNav .smallNavLink ul li {
+      list-style: none;
+      text-align: left;
+      padding: 8px;
+      animation: show 1.6s ease-out; }
+      .smallNav .smallNavLink ul li a {
+        text-decoration: none;
+        text-shadow: none; }
+        .smallNav .smallNavLink ul li a :hover {
+          color: black; }
+        .smallNav .smallNavLink ul li a:active {
+          color: black; }
 
 .nav {
   z-index: -1;
   margin-right: 20px; }
-
-.nav ul {
-  list-style-type: none;
-  overflow: hidden; }
-
-.nav li {
-  float: right;
-  margin-right: 40px; }
-
-.nav li a {
-  padding: 10px 16px 10px 16px;
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
-  transition: 0.3s;
-  opacity: 0.8;
-  text-shadow: none;
-  color: white; }
-
-.nav li a:hover {
-  opacity: 1;
-  border-bottom: 2px solid lightblue;
-  text-decoration: none !important;
-  color: black; }
-
-.nav .active {
-  opacity: 1;
-  color: black;
-  border-bottom: 2px solid lightblue;
-  text-decoration: none !important; }
+  .nav ul {
+    list-style-type: none;
+    overflow: hidden; }
+  .nav li {
+    float: right;
+    margin-right: 40px; }
+  .nav li a {
+    padding: 10px 16px 10px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    transition: 0.3s;
+    opacity: 0.8;
+    text-shadow: none;
+    color: white; }
+  .nav li a:hover {
+    opacity: 1;
+    border-bottom: 2px solid lightblue;
+    text-decoration: none !important;
+    color: black; }
+  .nav .active {
+    opacity: 1;
+    color: black;
+    border-bottom: 2px solid lightblue;
+    text-decoration: none !important; }
 
 @media screen and (min-width: 1024px) {
   .smallNav {
