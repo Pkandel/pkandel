@@ -39,7 +39,7 @@ app.post('/sendmail', (req, res) => {
     if (error) {
       return res.json({
         success: false,
-        message: `failed sending message ${err}`,
+        message: `failed sending message ${error}`,
       });
     }
     return res.json({
