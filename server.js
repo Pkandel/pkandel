@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 app.use(cors());
+require('dotenv').config();
 
 
 app.post('/sendmail', (req, res) => {
@@ -20,8 +21,8 @@ app.post('/sendmail', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'unique.prakash2002@gmail.com',
-      pass: '212Sampraka828',
+      user: process.env.MAIL_SERVER,
+      pass: process.env.MAIL_PASSWORD,
     },
   });
 
