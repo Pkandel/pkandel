@@ -37,7 +37,9 @@ class Contact extends Component {
     const { name, email, message } = this.state;
 
     // send email from here
-    axios.post('http://localhost:4000/sendmail', {
+    const baseUrl = (process.env.NODE_ENV === "production") ? "http://128.199.174.166:4000/sendmail" : "http://localhost:4000/sendmail";
+
+    axios.post(baseUrl, {
       from: email,
       message
       subject: `Hello Prakash from ${name}`,
