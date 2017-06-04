@@ -36,7 +36,7 @@ class Contact extends Component {
   _handleSubmit(e) {
     const { name, email, message } = this.state;
     // send email from here
-    const baseUrl = (process.env.NODE_ENV === 'production') ? 'https://128.199.174.166:4000/sendmail' : 'http://localhost:4000/sendmail';
+    const baseUrl = (process.env.NODE_ENV === 'production') ? 'https://pkandel-server/sendmail' : 'http://localhost:4000/sendmail';
     axios.post(baseUrl, {
       from: email,
       message,
@@ -61,8 +61,8 @@ class Contact extends Component {
         <div className="contact-form">
           <form onSubmit={this._handleSubmit}>
             <div className="name-email">
-              <div className="name"> Name                       <input type="text" placeholder="your name" value={name} onChange={this._handleName} />                        </div>
-              <div className="email" > Email                       <input type="text" placeholder="your email" value={email} onChange={this._handleEmail} />                        </div>
+              <div className="name"> Name                        <input type="text" placeholder="your name" value={name} onChange={this._handleName} />                         </div>
+              <div className="email" > Email                        <input type="text" placeholder="your email" value={email} onChange={this._handleEmail} />                         </div>
             </div>
 
             <div className="message">
