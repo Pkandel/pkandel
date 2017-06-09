@@ -40,14 +40,14 @@ class Nav extends Component {
   }
   render() {
     const url = window.location.href;
-    let selectedNav = url.replace('https://pkandel.com/', '').toUpperCase();
+    let selectedNav = (process.env.NODE_ENV === "development") ? url.replace("http://localhost:3000/", '').toUpperCase() : url.replace("https://pkandel.com/", "").toUpperCase();
     if (selectedNav === '') {
      selectedNav = 'HOME';
      document.getElementById('me').style.display = 'block';
    }   else {
      document.getElementById('me').style.display = 'none';
    }
-
+console.log(selectedNav);
     return (
       <div className="navbar">
         <div className="big logo">
