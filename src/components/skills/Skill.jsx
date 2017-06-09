@@ -23,7 +23,9 @@ class Skill extends Component {
                         </p>
 
                     </div>
-                    <div className="each-skill-3">
+                </div>
+                <div className="row">
+                    <div className="each-skill-1">
                         <img alt="projects" src="./images/nodejs.png" className="img" />
                         <h3>Node JS</h3>
                         <p>Node Js is great language to work for back-end staff. Because it is based on the modular approach, it makes it so easy to reuse these module. And there are thousands of npm packages around there
@@ -31,28 +33,28 @@ class Skill extends Component {
                              </p>
 
                     </div>
-                </div>
-                <div className="row">
-                    <div className="each-skill-1">
+                    <div className="each-skill-2">
                         <img alt="projects" src="./images/docker.png" className="img" />
                         <h3>Docker</h3>
                         <p>Docker is the world's leading software container platform. Really, it is great to work with. In a big project where there are so many developers, docker makes it easy to 
                             provide the same platform to run the application so we don't have to worry about the platform that we are using.
                         </p>
-
                     </div>
-                    <div className="each-skill-2">
+                </div>
+
+                <div className="row">
+                    <div className="each-skill-1">
                         <img alt="projects" src="./images/keycloak.png" className="img" />
                         <h3>Keycloak</h3>
                         <p> Keycloak is an open source Identity and Access Management solution amined for modern applicaion and services.
                             If we can provide a great security using Keycloak, why do we bother to write code for every project. It also has social login which is really handy for modern applications. </p>
 
                     </div>
-                    <div className="each-skill-3">
+                    <div className="each-skill-2">
                         <img alt="projects" src="./images/git.jpeg" className="img" />
                         <h3>Git and Github</h3>
                         <p>Image result for git and githubwww.youtube.com
-                            Git is the distributed version control system. Git is responsible for keeping track of changes to content (usually source code files), 
+                            Git is the distributed version control system. Git is responsible for keeping track of changes to content (usually source code files),
                             and it provides mechanisms for sharing that content with others. GitHub is a company that provides Git repository hosting. </p>
                     </div>
                 </div>
@@ -72,22 +74,24 @@ class Skill extends Component {
                             to work with mongodb database. </p>
 
                     </div>
-                    <div className="each-skill-3">
-                        <img alt="projects" src="./images/express.png" className="img" />
-                        <h3>Express Js</h3>
-                        <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. </p>
-                    </div>
                 </div>
 
                 <div className="row">
                     <div className="each-skill-1">
+                        <img alt="projects" src="./images/express.png" className="img" />
+                        <h3>Express Js</h3>
+                        <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. </p>
+                    </div>
+                    <div className="each-skill-2">
                         <img alt="projects" src="./images/java.png" className="img" />
                         <h3>Java</h3>
                         <p>Java is really great object oriented programming language tha can be used to build any kind of application. Wheather we are making web apllicaton, desktop application or mobile applicaion (android)
                             Java really shines in all areas. </p>
 
                     </div>
-                    <div className="each-skill-2">
+                </div>
+                <div className="row">
+                    <div className="each-skill-1">
                         <img alt="projects" src="./images/php.png" className="img" />
                         <h3>PHP</h3>
                         <p>Php is great and widely used programming language that we use to build the back-end of web apllicaton.
@@ -95,7 +99,7 @@ class Skill extends Component {
                              </p>
 
                     </div>
-                    <div className="each-skill-3">
+                    <div className="each-skill-2">
                         <img alt="projects" src="./images/csharp.png" className="img" />
                         <h3>C#</h3>
                         <p>C# is also a great object oriented programming language that can be used to build any kind of application. It is used to make either android or IOS applicatioin using Xamrin and ASP.NET to make

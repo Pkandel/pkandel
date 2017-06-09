@@ -32,9 +32,9 @@
     .edu-exp {
         position: relative;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 5px;
         height: auto;
-        top: 20px;
+        top: 10px;
         display: flex;
         -webkit-display: flex;
         .experience {
@@ -43,7 +43,7 @@
             bottom: 20px;
             height: auto; //margin:auto;
             left: 0;
-            width: 49%;
+            width: 49.5%;
             padding: 10px 10px 10px 16px;
             border-radius: 10px;
             background-color: white;
@@ -53,8 +53,8 @@
             position: relative;
             top: 0px;
             bottom: 20px;
-            margin-left: 2%;
-            width: 49%;
+            margin-left: 1%;
+            width: 49.5%;
             height: auto;
             padding: 10px 10px 10px 16px;
             border-radius: 10px;
@@ -78,18 +78,19 @@
             -webkit-display: block; //border: 1px solid red;
             .experience {
                 margin: auto;
-                width: 98%;
-                margin-bottom: 10px;
+                margin-bottom: 0px;
+                width: 100%;
             }
             .education {
-                width: 98%;
+                width: 100%;
                 margin: auto;
+                margin-bottom: 0px;
             }
         }
         .profile {
             margin: auto;
             margin-top: 40px;
-            width: 98%;
+            width: 100%;
             .profilePicture {
                 width: 120px;
                 height: 60px; // margin-left:37%;
@@ -99,6 +100,12 @@
                     height: 100px;
                 }
             }
+        }
+        hr {
+            margin-top: 5px !important;
+            margin-bottom: 5px !important;
+            border: 0;
+            border-top: 1px solid #eeeeee;
         }
     }
 

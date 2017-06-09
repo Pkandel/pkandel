@@ -38,36 +38,34 @@ body {
   height: 100%;
   margin-bottom: 10px;
   color: black; }
-  .row .each-skill-1 {
-    width: 32%;
-    margin-left: 1%;
-    padding: 10px;
-    border-radius: 10px; }
-    .row .each-skill-1 .img {
-      height: 71px;
-      width: 71px;
-      border-radius: 50%;
-      border: 2px solid whitesmoke; }
-  .row .each-skill-2 {
-    width: 32%;
-    margin-left: 1%;
-    padding: 10px;
-    border-radius: 10px; }
-    .row .each-skill-2 .img {
-      height: 71px;
-      width: 71px;
-      border-radius: 50%;
-      border: 2px solid whitesmoke; }
-  .row .each-skill-3 {
-    width: 32%;
-    margin-left: 1%;
-    padding: 10px;
-    border-radius: 10px; }
-    .row .each-skill-3 .img {
-      height: 71px;
-      width: 71px;
-      border-radius: 50%;
-      border: 2px solid whitesmoke; }
+
+.row .each-skill-1 {
+  width: 48.5%;
+  margin-left: 1%;
+  background-color: white;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 10px; }
+
+.row .each-skill-1 .img {
+  height: 71px;
+  width: 71px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke; }
+
+.row .each-skill-2 {
+  width: 48.5%;
+  margin-left: 1%;
+  background-color: white;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 10px; }
+
+.row .each-skill-2 .img {
+  height: 71px;
+  width: 71px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke; }
 
 @media screen and (max-width: 1024px) {
   .row {
@@ -76,14 +74,14 @@ body {
     height: 100%;
     margin-bottom: 5px;
     margin: 0; }
-    .row .each-skill-1 {
-      margin: auto;
-      width: 98%;
-      margin-bottom: 5px; }
-    .row .each-skill-2 {
-      margin: auto;
-      width: 98%;
-      margin-bottom: 5px; }
-    .row .each-skill-3 {
-      margin: auto;
-      width: 98%; } }
+  .row .each-skill-1 {
+    margin: auto;
+    width: 98%;
+    margin-bottom: 5px; }
+  .row .each-skill-2 {
+    margin: auto;
+    width: 98%;
+    margin-bottom: 5px; }
+  .row .each-skill-3 {
+    margin: auto;
+    width: 98%; } }

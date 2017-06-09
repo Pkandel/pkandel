@@ -72,7 +72,7 @@ class Project extends Component {
     return (
       <div>
         <div className="container" id="project">
-         <h4> <b>Commercial Project  >>> </b></h4>
+          <h4 style={{ color: "white" }}> <b>Commercial Project  >>> </b></h4>
           <div className="row">
             <div className="each-skill-1">
               <img alt="projects" src="./images/wpa.jpeg" className="img" />
@@ -86,14 +86,22 @@ class Project extends Component {
               <p>This is a web application hosted locally in the IIS server which help to manage records of a swagat grocery in Thomastown. This also helps to export data in every three months into exel or csv. </p>
               <p><a className="btn btn-default" href="#" role="button" onClick={this._showDescription} id="Record Management" >More Details &raquo;</a></p>
             </div>
-            <div className="each-skill-3">
+          </div>
+          <div className="row">
+            <div className="each-skill-1">
               <img alt="projects" src="./images/project.jpeg" className="img" />
               <h3>GADA Projcet</h3>
               <p>This is a Open source project carried out by GADA Technology to build a generic project which then can be used to generate multiple versions of it. </p>
               <p><a className="btn btn-default" href="#" role="button" onClick={this._showDescription} id="Gada Project">More Details &raquo;</a></p>
             </div>
+            <div className="each-skill-2">
+              <img alt="projects" src="./images/project.jpeg" className="img" />
+              <h3>INTERNMATCH Project</h3>
+              <p> I am currently working on this project.So description is comming about this project </p>
+              <p><a className="btn btn-default" href="#" role="button" onClick={this._showDescription} id="Intern Match">More Details &raquo;</a></p>
+            </div>
           </div>
-          <h4> <b> Open Source Projects >>> </b></h4>
+          <h4 style={{color:"white"}}> <b> Open Source Projects >>> </b></h4>
           <div className="row">
             <div className="each-skill-1">
               <img alt="projects" src="./images/project.jpeg" className="img" />
@@ -107,27 +115,29 @@ class Project extends Component {
               <p>This is a boilerplate to quickely get started for php developers on their own php application in Model, View and Controller structure which helps them to manage their code. </p>
               <p><a className="btn btn-default" href="#" role="button" onClick={this._showDescription} id="Php Mvc Boilerplate">More Details &raquo;</a></p>
             </div>
-            <div className="each-skill-3">
+          </div>
+          <div className="row">
+            <div className="each-skill-1">
               <img alt="projects" src="./images/project.jpeg" className="img" />
               <h3>Node API Boilerplate</h3>
               <p>This is a boilerplate to quickely get started for making API using NodeJs, ExpressJs, Mongodb, Mongoose, Docke, Docker-Compose and Swagger API. </p>
               <p><a className="btn btn-default" href="#" role="button" onClick={this._showDescription} id="Node Api Boilerplate">More Details &raquo;</a></p>
             </div>
-          </div>
-          <div className="row">
-            <div className="each-skill-1">
+            <div className="each-skill-2">
               <img alt="projects" src="./images/project.jpeg" className="img" />
               <h3>Node Secure API Boilerplate</h3>
               <p>This is a boilerplate to quickely get started for making Secured API using NodeJs, ExpressJs, Mongodb, Mongoose, Docke, Docker-Compose and Swagger API </p>
               <p><a className="btn btn-default" href="#" role="button" onClick={this._showDescription} id="Node Secure Api Boilerplate">More Details &raquo;</a></p>
             </div>
-            <div className="each-skill-2">
+          </div>
+          <div className="row">
+            <div className="each-skill-1">
               <img alt="projects" src="./favicon.png" className="img" />
               <h3>My Portfolio</h3>
               <p>This is a single page web application for creating a portfolio optimised for most of the devices and using modern technologies like react.This is a open source so anyone can use this code. </p>
               <p><a className="btn btn-default" href="#" role="button" onClick={this._showDescription} id="My Portfolio">More Details &raquo;</a></p>
             </div>
-            <div className="each-skill-3">
+            <div className="each-skill-2">
               <img alt="projects" src="./images/project.jpeg" className="img" />
               <h3>React Layout Component</h3>
               <p>This web application is created during the work in GADA technology. It is an open source so that any one can use this project. This layout has standard header, collapsable sidebar, content and footer. </p>
@@ -147,12 +157,6 @@ class Project extends Component {
               <h3>Email and Message Microservice</h3>
               <p>This project is a microservice that lets you send email and text messages which uses Nodemailer for sending email and Textmagic for sending texts.. </p>
               <p><a className="btn btn-default" href="#" role="button" onClick={this._showDescription} id="Email and Message Microservice">More Details &raquo;</a></p>
-            </div>
-            <div className="each-skill-3">
-              <img alt="projects" src="./images/project.jpeg" className="img" />
-              <h3>File Upload Microservice</h3>
-              <p>This project is a microservice that lets you upload file from the coputer to the database or save somewhere in the project folder. </p>
-              <p><a className="btn btn-default" href="#" role="button" onClick={this._showDescription} id="File Upload Microservice">More Details &raquo;</a></p>
             </div>
           </div>
         </div>

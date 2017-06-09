@@ -40,12 +40,12 @@ body {
 
 .project-detail {
   position: fixed;
-  top: 18vh;
+  top: 15.5vh;
   bottom: 3vh;
-  left: 3%;
+  left: 1.5%;
   margin: auto;
-  height: 80vh;
-  width: 94%;
+  height: 84.5vh;
+  width: 97%;
   padding: 15px;
   background-color: white;
   display: none;
@@ -56,24 +56,28 @@ body {
   border-radius: 10px;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
-  .project-detail .clear {
-    position: fixed;
-    margin: auto;
-    left: 2%;
-    width: 94%;
-    height: 20px; }
-    .project-detail .clear i {
-      float: right;
-      cursor: pointer;
-      transition: transform 0.5s; }
-      .project-detail .clear i:hover {
-        transform: scale(1.5);
-        transition: transform 0.5s;
-        color: red; }
-  .project-detail .images img {
-    margin: auto;
-    margin-left: 0;
-    width: 86%; }
+
+.project-detail .clear {
+  position: fixed;
+  margin: auto;
+  left: 2%;
+  width: 94%;
+  height: 20px; }
+
+.project-detail .clear i {
+  float: right;
+  cursor: pointer;
+  transition: transform 0.5s; }
+
+.project-detail .clear i:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+  color: red; }
+
+.project-detail .images img {
+  margin: auto;
+  margin-left: 0;
+  width: 86%; }
 
 @media screen and (max-width: 1024px) {
   .project-detail .images img {

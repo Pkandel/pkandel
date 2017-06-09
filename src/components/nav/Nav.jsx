@@ -75,7 +75,7 @@ console.log(selectedNav);
               <a href="https://www.linkedin.com/in/prakash-kandel-112b47a3/" target="_blank"> <img src="./images/linkedin.jpeg" className="img-circle" style={{ marginRight: '10px', width: '20px' }} alt="" /></a>
             </li>
 
-            {selectedNav}
+           <text style={{color:"white"}} >{selectedNav} </text>
 
             <div id="toggle" onClick={this._renderNav}>
               <div id="first" />
