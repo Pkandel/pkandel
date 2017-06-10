@@ -12,10 +12,11 @@
     position: fixed;
     top: 15.5vh;
     bottom: 3vh;
-    left: 1.5%;
+    left: 4%;
+    right:5%;
     margin: auto;
     height: 84.5vh;
-    width: 97%;
+    width: 91%;
     padding: 15px;
     background-color: white;
     display: none;
@@ -30,7 +31,7 @@
         position: fixed;
         margin: auto;
         left: 2%;
-        width: 94%;
+        width: 91%;
         height: 20px;
         i {
             float: right;
@@ -58,6 +59,10 @@
 
 @media screen and (max-width: 1024px) {
     .project-detail {
+        left: 1.5%;
+        margin: auto;
+        height: 84.5vh;
+        width: 97%;
         .images {
             img {
                 width: 100%;
