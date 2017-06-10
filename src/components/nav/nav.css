@@ -21,7 +21,9 @@
 .navbar {
   display: inline;
   font-size: 16px;
-  transition: 1s; }
+  transition: 1s;
+  border: none !important;
+  top: 20px; }
 
 .logo {
   margin-left: 10%; }

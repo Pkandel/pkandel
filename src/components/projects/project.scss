@@ -10,13 +10,13 @@
 
 .project-detail {
     position: fixed;
-    top: 15.5vh;
-    bottom: 3vh;
-    left: 4%;
-    right:5%;
+    top: 12.5vh;
+    // bottom: 3vh;
+    left: 3%;
+    right:4%;
     margin: auto;
-    height: 84.5vh;
-    width: 91%;
+    height: 87.5vh;
+    width: 92%;
     padding: 15px;
     background-color: white;
     display: none;
@@ -61,8 +61,10 @@
     .project-detail {
         left: 1.5%;
         margin: auto;
-        height: 84.5vh;
+        height: 90vh;
+        top:10vh;
         width: 97%;
+
         .images {
             img {
                 width: 100%;
