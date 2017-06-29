@@ -1,3 +1,4 @@
-npm install
-npm run build
-rsync -r ~/projects/private/pkandel/build/ root@128.199.174.166:/usr/share/nginx/html
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install -y nodejs
+/home/ubuntu/.npm install
+/home/ubuntu/.npm run build
