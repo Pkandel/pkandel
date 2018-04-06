@@ -84,12 +84,6 @@ class Contact extends Component {
   }
   render() {
     const { name, email, message, fetching } = this.state;
-    if(fetching === false) {
-      document.getElementById('overlay').style.display = "none";
-    }
-    else {
-      document.getElementById('overlay').style.display = "block";
-    }
     return (
       <div className="container" id="contact">
         <span id="feedback-error" style={{color:"red", textShadow:"none"}}></span>

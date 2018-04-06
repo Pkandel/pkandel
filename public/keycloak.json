@@ -1,0 +1,12 @@
+{
+  "realm": "prakash-home",
+  "auth-server-url": "http://authorize.pkandel.com/auth",
+  "ssl-required": "external",
+  "resource": "portfolio-frontend",
+  "credentials": {
+    "secret": "f840a067-af97-4df1-b993-93161a912d00"
+  },
+  "use-resource-role-mappings": true,
+  "confidential-port": 0,
+  "policy-enforcer": {}
+}

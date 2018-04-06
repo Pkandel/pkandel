@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {
   NavLink,
 } from 'react-router-dom';
+import Keycloak from 'keycloak-js';
+import Loader from '../loader';
 import { Router, Footer } from '../';
 import './nav.css';
 
@@ -12,9 +14,27 @@ class Nav extends Component {
     super();
     this.state = ({
       DisplaysmallNavLink: false,
+      keycloak: {},
+      isAuthenticated: false
     });
     this._renderNav = this._renderNav.bind(this);
     this._hideSmallNav = this._hideSmallNav.bind(this);
+  }
+
+  componentDidMount() {
+
+  }
+
+  componentWillMount() {
+    const _keycloak = Keycloak();
+    _keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
+      this.setState({
+        keycloak: _keycloak,
+        isAuthenticated: true
+      })
+    }).error(function () {
+      alert('failed to initialize');
+    });
   }
 
   _renderNav() {
@@ -39,15 +59,10 @@ class Nav extends Component {
     });
   }
   render() {
-    const url = window.location.href;
-    let selectedNav = (process.env.NODE_ENV === "development") ? url.replace("http://localhost:3000/", '').toUpperCase() : url.replace("https://pkandel.com/", "").toUpperCase();
-    if (selectedNav === '') {
-     selectedNav = 'HOME';
-     document.getElementById('me').style.display = 'block';
-   }   else {
-     document.getElementById('me').style.display = 'none';
-   }
-console.log(selectedNav);
+    const { location } = window;
+    let selectedNav = (location.href.replace(location.origin, '')).replace('/', '').toUpperCase()
+    if (selectedNav === '') selectedNav = 'HOME';
+    if (!this.state.isAuthenticated) return <Loader />;
     return (
       <div className="navbar">
         <div className="big logo">
@@ -75,7 +90,7 @@ console.log(selectedNav);
               <a href="https://www.linkedin.com/in/prakash-kandel-112b47a3/" target="_blank"> <img src="./images/linkedin.jpeg" className="img-circle" style={{ marginRight: '10px', width: '20px' }} alt="" /></a>
             </li>
 
-           <text style={{color:"white"}} >{selectedNav} </text>
+            <text style={{ color: "white" }} >{selectedNav} </text>
 
             <div id="toggle" onClick={this._renderNav}>
               <div id="first" />

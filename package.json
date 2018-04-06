@@ -5,9 +5,15 @@
   "dependencies": {
     "axios": "^0.16.1",
     "express": "^4.15.3",
+    "forever": "^0.15.3",
+    "keycloak-js": "^4.0.0-beta.1",
+    "nodemon": "^1.17.2",
+    "path": "^0.12.7",
+    "pm2": "^2.7.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.0.0",
+    "react-scripts": "1.0.17",
     "sendgrid": "^5.1.1"
   },
   "devDependencies": {
@@ -19,6 +25,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "forever": "^0.15.3",
     "node-sass": "^4.5.2",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",
@@ -33,6 +40,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "dev": "nodemon server.js",
-    "prod": "pm2 start server.js"
+    "prod": "node server.js",
+    "stop:prod": "pm2 stop 0"
   }
 }

@@ -1,8 +1,8 @@
-@keyframes slideUp {
+@keyframes fadeIn {
   from {
-    margin-top: 100%; }
+    opacity: 0; }
   to {
-    margin-top: 18vh; } }
+    opacity: 1; } }
 
 body {
   position: relative; }
@@ -10,12 +10,12 @@ body {
 .home {
   color: black;
   position: relative;
-  animation: 1.5s slideUp;
   height: 100%;
   margin: auto;
-  margin-top: 18vh;
-  margin-right: 35%;
-  width: 50%; }
+  margin-top: 15vh;
+  margin-right: 30%;
+  animation: 4s fadeIn;
+  width: 40%; }
   .home h3 {
     text-align: center;
     color: white;
@@ -61,15 +61,9 @@ body {
       transition: none; }
 
 @media screen and (max-width: 1024px) {
-  @keyframes slideUp {
-    from {
-      margin-top: 100%; }
-    to {
-      top: 180px; } }
   .home {
     position: relative;
     top: 5px;
-    animation: 1.5s fadein;
     margin: auto;
     margin-top: 180px;
     margin-right: 33%;
@@ -86,7 +80,6 @@ body {
   .home {
     position: relative;
     top: 5px;
-    animation: 1.5s fadein;
     margin: auto;
     margin-top: 180px;
     width: 80%;

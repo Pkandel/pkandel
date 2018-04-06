@@ -1,141 +1,126 @@
-    @keyframes slideUp {
-    from {
-        margin-top: 100%
-    }
-    to {
-        margin-top: 18vh
-    }
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1 ;}
 }
+   
+   body {
+        position: relative;
+    }
 
-body {
-    position: relative;
-}
-
-.home {
-    color: black;
-    position: relative;
-    animation: 1.5s slideUp;
-    height: 100%;
-    margin: auto;
-    margin-top: 18vh;
-    margin-right: 35%;
-    width: 50%; //border: 1px solid red;
-    h3 {
-        text-align: center;
-        color: white;
-        margin-bottom: 15px;
-        .name {
-            color: cyan;
-        }
-    }
-    h4 {
-        //padding-left: 20%;
-        text-align: center; // border: 1px solid red;
-        color: white;
-        .web-developer {
-            color: cyan;
-        }
-    }
-    p {
-        text-align: center;
-        color: white;
-        .company {
-            color: cyan;
-        }
-    }
-    .get-in-touch {
-        text-align: center;
-        margin-top: 25px;
-        font-size: 18px;
-        background-color: #0088cc;
-        padding: 15px;
-        border-radius: 10px;
-        cursor: pointer;
-        #text {
-            opacity: 1;
-            transition: opacity 1s;
-        }
-        #social {
-            height: 0;
-            opacity: 0;
-            li {
-                list-style: none;
-                img {
-                    margin-left: 5px;
-                    margin-top: -10px;
-                }
+    .home {
+        color: black;
+        position: relative;
+        height: 100%;
+        margin: auto;
+        margin-top: 15vh;
+        margin-right: 30%;
+        animation: 4s fadeIn; 
+        width: 40%; //border: 1px solid red;
+        h3 {
+            text-align: center;
+            color: white;
+            margin-bottom: 15px;
+            .name {
+                color: cyan;
             }
         }
-        &:hover {
-            #social {
-                height: inherit;
+        h4 {
+            //padding-left: 20%;
+            text-align: center; // border: 1px solid red;
+            color: white;
+            .web-developer {
+                color: cyan;
+            }
+        }
+        p {
+            text-align: center;
+            color: white;
+            .company {
+                color: cyan;
+            }
+        }
+        .get-in-touch {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 18px;
+            background-color: #0088cc;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            #text {
                 opacity: 1;
                 transition: opacity 1s;
             }
-            #text {
+            #social {
                 height: 0;
                 opacity: 0;
-                transition: none;
+                li {
+                    list-style: none;
+                    img {
+                        margin-left: 5px;
+                        margin-top: -10px;
+                    }
+                }
+            }
+            &:hover {
+                #social {
+                    height: inherit;
+                    opacity: 1;
+                    transition: opacity 1s;
+                }
+                #text {
+                    height: 0;
+                    opacity: 0;
+                    transition: none;
+                }
             }
         }
     }
-}
 
-@media screen and (max-width: 1024px) {
-    @keyframes slideUp {
-        from {
-            margin-top: 100%
-        }
-        to {
-            top: 180px;
-            ;
+    @media screen and (max-width: 1024px) {
+        .home {
+            position: relative;
+            top: 5px;
+            margin: auto;
+            margin-top: 180px;
+            margin-right: 33%;
+            width: 50%;
+            height: 100%;
+            h3 {
+                font-size: 22px;
+            }
+            h4 {
+                font-size: 15px; // padding-left: 0;
+            }
+            p {
+                font-size: 12px;
+            }
         }
     }
-    .home {
-        position: relative;
-        top: 5px;
-        animation: 1.5s fadein;
-        margin: auto;
-        margin-top: 180px;
-        margin-right: 33%;
-        width: 50%;
-        height: 100%;
-        h3 {
-            font-size: 22px;
-        }
-        h4 {
-            font-size: 15px; // padding-left: 0;
-        }
-        p {
-            font-size: 12px;
+
+    @media screen and (max-width: 414px) {
+        .home {
+            position: relative;
+            top: 5px;
+            margin: auto;
+            margin-top: 180px; //margin-right: 38%;
+            width: 80%;
+            height: 100%;
+            h3 {
+                font-size: 22px;
+            }
+            h4 {
+                font-size: 15px;
+                padding-left: 0;
+            }
+            p {
+                font-size: 12px;
+            }
         }
     }
-}
 
-@media screen and (max-width: 414px) {
-    .home {
-        position: relative;
-        top: 5px;
-        animation: 1.5s fadein;
-        margin: auto;
-        margin-top: 180px; //margin-right: 38%;
-        width: 80%;
-        height: 100%;
-        h3 {
-            font-size: 22px;
-        }
-        h4 {
-            font-size: 15px;
-            padding-left: 0;
-        }
-        p {
-            font-size: 12px;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .home {
+            margin-top: 220px;
         }
     }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-.home {
-    margin-top:220px;
-}
-}

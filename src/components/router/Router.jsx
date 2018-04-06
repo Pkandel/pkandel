@@ -13,8 +13,7 @@ class Rout extends Component {
                 <Route path="/skills" component={Skill} />
                 <Route path="/skills" component={Skill} />
                 <Route path="/about" component={About} />
-                
-                
+                <Route path="/*" component={Home} />
             </Switch>
         );
     }

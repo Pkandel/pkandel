@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  pkandel:
+    build: .
+    image: pkandel:latest
+    ports:
+      - "8081:8081" 
+    volumes:
+      - ./build:/usr/src/app/build  
