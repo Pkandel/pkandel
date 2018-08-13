@@ -1,10 +1,6 @@
 @keyframes slideIn {
-    from {
-        height: 0px
-    }
-    to {
-        height: 190px
-    }
+    from { height: 0px }
+    to {  height: 190px }
 }
 
 @keyframes show {
@@ -32,7 +28,6 @@
     font-size: 16px;
     transition: 1s;
     border: none !important;
-    top: 20px;
 }
 
 .logo {
@@ -149,11 +144,10 @@
     margin-right: 20px;
     ul {
         list-style-type: none;
-        overflow: hidden;
     }
     li {
         float: right;
-        margin-right: 40px;
+        margin-right: 25px;
     }
     li a {
         padding: 10px 16px 10px 16px;

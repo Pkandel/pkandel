@@ -44,10 +44,10 @@ class Project extends Component {
       document.getElementById('project-detail').style.display = 'block';
       document.getElementById('project-detail').style.opacity = '0.9';
       document.getElementById('project').style.pointerEvents = "none";
-      document.getElementById('project').style.opacity = "0.5";
-      document.getElementById('nav').style.opacity = "0.5";
+      document.getElementById('project').style.opacity = "0";
+      document.getElementById('nav').style.opacity = "0";
       document.getElementById('nav').style.pointerEvents = "none";      
-      document.getElementById('footer').style.opacity = "0.5";
+      document.getElementById('footer').style.opacity = "0";
       document.getElementById('footer').style.pointerEvents = "none";   
       
       this.setState({

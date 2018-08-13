@@ -22,8 +22,7 @@
   display: inline;
   font-size: 16px;
   transition: 1s;
-  border: none !important;
-  top: 20px; }
+  border: none !important; }
 
 .logo {
   margin-left: 10%; }
@@ -117,11 +116,10 @@
   z-index: -1;
   margin-right: 20px; }
   .nav ul {
-    list-style-type: none;
-    overflow: hidden; }
+    list-style-type: none; }
   .nav li {
     float: right;
-    margin-right: 40px; }
+    margin-right: 25px; }
   .nav li a {
     padding: 10px 16px 10px 16px;
     text-decoration: none;

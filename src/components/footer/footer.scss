@@ -1,27 +1,21 @@
 @import '../body.scss';
 .footer {
-    position: absolute;
-    left: 5px;
-    z-index: 10;
+    position: fixed;
+    top: 30vh;
+    left:0px;
+    z-index: 100;
     li {
         list-style: none; //margin-top:-50vh;
-        a {
-            padding-bottom: 25px;
-        }
-        a:hover {
-            cursor: pointer;
-        }
+        a { display: block; }
+        a:hover { cursor: pointer; }
     }
 }
 
 .img {
     cursor: pointer;
-    border:1px solid white;
     width:30px;
-    border-radius: 50%;
-    margin-top:15px;
+    margin-top:1px;
 }
-// ipad air screen
 @media screen and (max-width: 1024px) {
     .footer {
        display: none;

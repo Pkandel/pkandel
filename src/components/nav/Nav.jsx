@@ -15,7 +15,7 @@ class Nav extends Component {
     this.state = ({
       DisplaysmallNavLink: false,
       keycloak: {},
-      isAuthenticated: false
+      isAuthenticated: true
     });
     this._renderNav = this._renderNav.bind(this);
     this._hideSmallNav = this._hideSmallNav.bind(this);
@@ -26,15 +26,15 @@ class Nav extends Component {
   }
 
   componentWillMount() {
-    const _keycloak = Keycloak();
-    _keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
-      this.setState({
-        keycloak: _keycloak,
-        isAuthenticated: true
-      })
-    }).error(function () {
-      alert('failed to initialize');
-    });
+    // const _keycloak = Keycloak();
+    // _keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
+    //   this.setState({
+    //     keycloak: _keycloak,
+    //     isAuthenticated: true
+    //   })
+    // }).error(function () {
+    //   alert('failed to initialize');
+    // });
   }
 
   _renderNav() {
