@@ -28,7 +28,7 @@ body {
 .footer {
   position: fixed;
   top: 30vh;
-  left:0px;
+  left: 0px;
   z-index: 100; }
   .footer li {
     list-style: none; }

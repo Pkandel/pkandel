@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   NavLink,
 } from 'react-router-dom';
-import Keycloak from 'keycloak-js';
 import Loader from '../loader';
 import { Router, Footer } from '../';
 import './nav.css';
@@ -14,7 +13,6 @@ class Nav extends Component {
     super();
     this.state = ({
       DisplaysmallNavLink: false,
-      keycloak: {},
       isAuthenticated: true
     });
     this._renderNav = this._renderNav.bind(this);
@@ -23,18 +21,6 @@ class Nav extends Component {
 
   componentDidMount() {
 
-  }
-
-  componentWillMount() {
-    // const _keycloak = Keycloak();
-    // _keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
-    //   this.setState({
-    //     keycloak: _keycloak,
-    //     isAuthenticated: true
-    //   })
-    // }).error(function () {
-    //   alert('failed to initialize');
-    // });
   }
 
   _renderNav() {
